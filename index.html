@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -37,27 +36,54 @@
             <div class="col p-5 border-end">
               <h1 class="display-6">Add your information:</h1>
               <form id="form">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Full Name:</label>
-                  <input class="form-control" id="name" placeholder="Your full name">
-                </div>
+          <div class="mb-3">
+            <label class="label" for="name">Name:</label>
+            <input class="form-control" id="name" placeholder="Your full name">
+          </div>
+         <div class="mb-3">
+           <label class="label" for="position">Position:</label>
+           <input class="form-control" id="position" placeholder="This is what I do">
+          </div>
+         <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label" for="checkPhone">Phone:</label>
+            </div>
+            <div class="field-body">
+              <div class="field has-addons has-addons-centered">
+                <p class="control">
+                  <label class="button is-static" title="Check when need insert phone">
+                    <input id="checkPhone" type="checkbox">
+                  </label>
+                </p>
+                <p class="control is-expanded">
+                  <input id="phone" class="form-control" placeholder="+61 555 555 5555" disabled>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+          <label class="label" for="email">Email:</label>
+           <input id="email" class="form-control" placeholder="name@gmail.com">
+          </div>
+          <div class="mb-3">
+              <label class="label" for="facebook">Facebook:</label>
+                  <input id="facebook" class="form-control" placeholder="http://facebook.com/user/">
+          </div>
+          <div class="mb-3">
+          <label class="label" for="twitter">Twitter:</label>
+          <input id="twitter" class="form-control" placeholder="http://twitter.com/user/">
+          </div>
+          <div class="mb-3">
+              <label class="label" for="insta">Instagram:</label>
+                  <input id="insta" class="form-control" placeholder="http://instagram.com/user/">
+              </div>
+        <div class="mb-3">
+            <label class="label" for="linkedin">LinkedIn:</label>
+           <input id="linkedin" class="form-control" placeholder="http://linkedin.com/user/">
 
-                <div class="mb-3">
-                  <label for="designation" class="form-label">Designation:</label>
-                  <input class="form-control" id="designation" placeholder="Your designation">
-                </div>
-                
-                <div class="mb-3">
-                  <label for="checkPhone" class="form-label">Enable Phone Number:</label>
-                  <div class="input-group mb-3">
-                    <div class="input-group-text">
-                      <input class="form-check-input mt-0" id="checkPhone" type="checkbox" value="">
-                    </div>
-                    <input type="text" class="form-control" id="phone" placeholder="+1 (408) 990-8483" disabled>
-                  </div>
-                </div>
 
-                <div class="mb-3">
+
+            <!--       <div class="mb-3">
                   <label for="checkSkype" class="form-label">Enable Skype:</label>
                   <div class="input-group mb-3">
                     <div class="input-group-text">
@@ -65,12 +91,8 @@
                     </div>
                     <input type="text" class="form-control" id="skype" placeholder="You skype ID" disabled>
                   </div>
-                </div>
+                </div> -->
 
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email:</label>
-                  <input class="form-control" id="email" placeholder="Your email">
-                </div>
                 
                 <!-- <div class="mb-3">
                   <label for="checkIcons" class="form-label">Icons:</label>
@@ -80,8 +102,7 @@
                     </div>
                     <input type="text" class="form-control" id="social_network" placeholder="skype id" disabled>
                   </div>
-                </div> -->
-
+       
                 <div class="mb-3">
                   <label for="checkLogo" class="form-label">Logo:</label>
                   <div class="input-group mb-3">
@@ -90,14 +111,16 @@
                     </div>
                     <input type="text" class="form-control" id="logo" placeholder="Remove logo?" disabled>
                   </div>
-                </div>
+                </div> -->  
+
+              </div> 
 
               </form>
             </div>
             <div class="col p-5">
               <h1 class="display-6">Preview:</h1>
 
-              <div class="mb-3" id="company">
+           <!--     <div class="mb-3" id="company">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="company" id="inlineRadio1" value="maxpay" checked>
                   <label class="form-check-label" for="inlineRadio1">Maxpay</label>
@@ -106,44 +129,108 @@
                   <input class="form-check-input" type="radio" name="company" id="inlineRadio2" value="covery">
                   <label class="form-check-label" for="inlineRadio2">Covery</label>
                 </div>
-              </div>
+              </div> -->  
               
-              <div class="card is-primary mb-5">
+   
+
+
+<div class="card  mb-5">
                 <div class="card-body" id="signature_container">
                   <table cellspacing="0" cellpadding="0" id="signature">
                     <tbody>
                       <tr>
-                        <td style="padding-left:10px; color:rgb(85, 85, 85); font-family:Helvetica, Arial, sans-serif;font-size:12px;line-height:16px;" colspan="2">
-                          <span class="name" id="preparedName" style="color:rgb(97, 188, 0); font-weight:bold;">
-                            Name
-                          </span>
-                          <br>
-                          <span class="designation">
-                              Specialist in...
-                            </span>
-                          <br>
-                          <div id="phoneWrap"></div>
-                          <div id="skypeWrap"></div>
-                          <span style="white-space:nowrap">
-                              <a class="email" href="mailto:yourcompany@yourdomain.com" style="color:rgb(85, 85, 85); text-decoration:none;">
-                                yourcompany@yourdomain.com
-                              </a>
-                            </span>
-                          <br>
-                          <br>
-                          <span style="white-space:nowrap" id="logoWrap">
-                              <img src="" class="logo">
-                          </span>
-                          <div id="imageWrap"></div>
-                          <hr>
-                        </td>
+                  <td valign="top" style="margin:0.1px;padding:0 10px 0 0">
+                    <img src="https://storied-puppy-a5df5b.netlify.app/ext/emailg.svg" alt=" Greenhouse Logo" width="90" valign="top" alt="Greenhouse-logo" />
+                  </td>
+                  <td valign="top" style="margin:0.1px;">
+                    <table cellpadding="0" style="border-collapse:collapse">
+                      <tbody>
+                        <tr>
+                          <td style="margin:0.1px;padding:0;font:14.1px/17.8px Arial;text-transform: uppercase;">
+                            <span class="name" id="preparedName" style="color:black; font-weight:bold;">
+                      Name
+                    </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="margin:0.1px;padding:0;font:13.1px/16.5px Arial;">
+                            <span class="position">
+                        Specialist in...
+                      </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="margin:0.1px;padding:0px 0 0;font:13.1px/16.5px Arial">
+                            <div id="phoneWrap"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="margin:0.1px;padding:10px 0 0;">
+                            <table cellpadding="0" style="border-collapse:collapse; width:175px;">
+                              <tbody>
+                                <tr>
+                                  <td style="margin:0.1px;padding:0 5px 0 0">
+                                    <a style="text-decoration: none; color: transparent; margin-top: 5px;" class="linkedin" href="https://www.linkedin.com/company/greenhousetech/">
+                                      <img src="https://storied-puppy-a5df5b.netlify.app/ext/GH_linkedin.svg" alt=" Linkedin Logo" width="24" style="display:block;outline:0" valign="top" alt="linkedin" />
+                                    </a>
+                                  </td>
+                                  <td style="margin:0.1px;padding:0 5px 0 0">
+                                    <a style="text-decoration: none; color: transparent; margin-top: 5px;" class="twitter" href="https://twitter.com/greenhousetech">
+                                      <img src="https://storied-puppy-a5df5b.netlify.app/ext/GH_twitter.svg" alt="Twitter Logo" width="24" style="display:block;outline:0" valign="top" alt="twitter" />
+                                    </a>
+                                  </td>
+                                  <td style="margin:0.1px;padding:0 5px 0 0">
+                                    <a style="text-decoration: none; color: transparent; margin-top: 5px;" class="facebook" href="https://www.facebook.com/InvestibleHQ">
+                                      <img src="https://storied-puppy-a5df5b.netlify.app/ext/GH_fb.svg" alt="Facebook Logo" width="24" style="display:block;outline:0" valign="top" alt="facebook" />
+                                    </a>
+                                  </td>
+                                  <td style="margin:0.1px;padding:0 5px 0 0">
+                                    <a style="text-decoration: none; color: transparent; margin-top: 5px;" class="insta" href="https://www.instagram.com/investible/">
+                                      <img src="https://storied-puppy-a5df5b.netlify.app/ext/GH_insta.svg" alt="Instagram Logo" width="24" style="display:block;outline:0" valign="top" alt="instagram" />
+                                    </a>
+                                  </td>
+                                  <td style="margin:0.1px;padding:0 5px 0 0">
+                                    <a class="email" href="mailto:name@gmail.com" style="text-decoration: none; color: transparent; margin-top: 5px;"><img src="https://storied-puppy-a5df5b.netlify.app/ext/GH_plane.svg" } alt="Email" width="24" style="display:block;outline:0" valign="top" alt="mail" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </tr>
+                  </td>
+                <tr>
+                  <td style="margin:0.1px;padding:0;font-size:13px;line-height:16.5px">
+                    <table cellpadding="0" style="border-collapse:collapse">
+                      <tbody>
+                        <tr>
+                          <td style="margin:0.1px;padding:0;font:13.1px/16.5px Arial">
+                            <span style="color:#000000;font:13px Arial;" >
+                            <hr >Connected. We co-innovate for climate action.
+                          </span>&nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr />
+                <td style="margin:0.1px;padding:0;font:13.1px/16.5px Arial">
+                  <a href="https://Greenhouse.tech" style="text-decoration:none;color:#e4e4e4;font:13px Arial;font-weight:600;;text-transform:uppercase;" target="_blank">Greenhouse.tech</a>&nbsp;
+                </td>
+                </tr>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+                  </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-              </div>
+              </div></div></div></div></section>
 
-              <div class="mb-5">
+  
+  <div class="mb-5">
                 <h1 class="display-6">Signatures:</h1>
                 <div class="controls">
                   <button class="btn btn-primary" data-select data-signature="signature">

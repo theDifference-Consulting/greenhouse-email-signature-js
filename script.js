@@ -27,7 +27,7 @@
     var genomeLogo = "data:image/png;base64,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";
     var styleName = doc.querySelector('#preparedName');
 
-    logo.src = maxpayLogo;
+    
     for (var i = companyRadio.length - 1; i >= 0; i--) {
       companyRadio[i].addEventListener('click', changeCompany);
     }
@@ -61,15 +61,7 @@
         addHtmlNodes(phoneWrap, '(937) 555-5555', 'phone');
       }
     });
-    checkSkype.addEventListener('click', function () {
-      if (!this.checked) {
-        skypeInput.disabled = true;
-        removeHtmlNodes(skypeWrap);
-      } else {
-        skypeInput.disabled = false;
-        addHtmlNodes(skypeWrap, 'skypename', 'skype');
-      }
-    });
+   
     function removeHtmlNodes(node) {
       node.innerHTML = '';
     }
@@ -82,15 +74,7 @@
       node.appendChild(br);
     }
     
-    checkLogo.addEventListener('click', function () {
-      this.checked ? removeLogo() : addLogo();
-    });
-    function removeLogo() {
-      savedLogo = logoWrap.removeChild(logoWrap.lastElementChild);
-    }
-    function addLogo() {
-      logoWrap.appendChild(savedLogo);
-    }
+ 
 
     function updateSignature(e) {
       var id = e.target.id;
@@ -101,12 +85,13 @@
 
       if (id === 'email') {
         element.href = 'mailto:' + value;
-        element.innerHTML = value;
       } else if (id === 'facebook') {
         element.href = value;
       } else if (id === 'twitter') {
         element.href = value;
       } else if (id === 'linkedin') {
+        element.href = value;
+      } else if (id === 'insta') {
         element.href = value;
       } else if (id === 'image') {
         if (checkBanner) {
